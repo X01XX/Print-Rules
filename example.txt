@@ -1,0 +1,65 @@
+
+>(load #p "main.lisp")
+;; Loading #p"main.lisp"
+;; Loading #p"value.lisp"
+;; Finished loading #p"value.lisp"
+;; Loading #p"region.lisp"
+;; Finished loading #p"region.lisp"
+;; Loading #p"rule.lisp"
+;; Finished loading #p"rule.lisp"
+;; Loading #p"any1ofeach.lisp"
+;; Finished loading #p"any1ofeach.lisp"
+;; Loading #p"anyxofn.lisp"
+;; Finished loading #p"anyxofn.lisp"
+Value number bits 2 all bits 11 msb 10 not msb 01
+ 
+rule [00/00]
+rule [00/01]
+rule [00/11]
+rule [00/10]
+rule [01/00]
+rule [01/01]
+rule [01/11]
+rule [01/10]
+rule [11/00]
+rule [11/01]
+rule [11/11]
+rule [11/10]
+rule [10/00]
+rule [10/01]
+rule [10/11]
+rule [10/10]
+ 
+All posible rules 16
+ 
+ pair [10/10] - [10/11]
+ pair [10/10] - [11/10]
+ pair [10/10] - [11/11]
+ pair [10/11] - [11/10]
+ pair [10/11] - [11/11]
+ pair [10/01] - [10/00]
+ pair [10/01] - [11/01]
+ pair [10/01] - [11/00]
+ pair [10/00] - [11/01]
+ pair [10/00] - [11/00]
+ pair [11/10] - [11/11]
+ pair [11/01] - [11/00]
+ pair [01/10] - [01/11]
+ pair [01/10] - [00/10]
+ pair [01/10] - [00/11]
+ pair [01/11] - [00/10]
+ pair [01/11] - [00/11]
+ pair [01/01] - [01/00]
+ pair [01/01] - [00/01]
+ pair [01/01] - [00/00]
+ pair [01/00] - [00/01]
+ pair [01/00] - [00/00]
+ pair [00/10] - [00/11]
+ pair [00/01] - [00/00]
+ 
+num valid pairs (same initial state, different result) 24
+ 
+ ;; Finished loading #p"main.lisp"
+T
+
+Note: The number of bits can be changed on line 24 of the file main.lisp.
